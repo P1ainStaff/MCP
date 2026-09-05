@@ -1,0 +1,58 @@
+{
+  "name": "@plainstaff/mcp",
+  "version": "1.0.0",
+  "description": "PlainStaff Model Context Protocol server — tool registry, schemas, and stdio proxy",
+  "author": "auronet GmbH <sales@plainstaff.com>",
+  "license": "MIT",
+  "homepage": "https://plainstaff.com/developers/mcp",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/P1ainStaff/MCP.git"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "plainstaff",
+    "time-tracking",
+    "ai"
+  ],
+  "type": "module",
+  "main": "dist/src/index.mjs",
+  "module": "dist/src/index.mjs",
+  "types": "dist/src/index.d.mts",
+  "typings": "dist/src/index.d.mts",
+  "bin": {
+    "plainstaff-mcp-server": "./dist/src/bin-stdio.mjs",
+    "mcp-server": "./dist/src/bin-stdio.mjs"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/src/index.d.mts",
+      "import": "./dist/src/index.mjs",
+      "default": "./dist/src/index.mjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc && node scripts/copy-bin.mjs",
+    "builddev": "pnpm run build",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "pnpm run build"
+  },
+  "dependencies": {
+    "zod": "^3.25.76",
+    "zod-to-json-schema": "^3.24.6"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.3",
+    "typescript": "^5.8.3",
+    "vitest": "^3.1.1"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
