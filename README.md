@@ -1,5 +1,9 @@
 # @plainstaff/mcp
 
+> [!WARNING]
+> **Under Active Development — Not Yet Live**  
+> The PlainStaff MCP extension is currently in active development and **cannot be used yet**. The remote endpoints and packages are not yet live.
+
 Model Context Protocol server for PlainStaff — curated tools, OAuth-scoped registry, and stdio proxy.
 
 ## Packages
