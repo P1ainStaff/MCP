@@ -7,10 +7,7 @@
   "homepage": "https://plainstaff.com/developers/mcp",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/P1ainStaff/MCP.git"
-  },
-  "publishConfig": {
-    "access": "public"
+    "url": "git+https://github.com/P1ainStaff/PlainStaff.git"
   },
   "keywords": [
     "mcp",
